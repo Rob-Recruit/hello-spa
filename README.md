@@ -22,6 +22,30 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Deploy on VirtualBox vm 
+
+Prerequisite:
+
+[Virtualbox](https://www.virtualbox.org/manual/UserManual.html#installation) installed and [Vagrant](https://www.vagrantup.com/docs/installation) installed
+
+1. Clone od download the app repostory
+2. Run `vagrant up`
+
+
+> INFO: 
+>
+>	- IP of Virtualbox vm is assigned by DHCP
+>	- app is accessible on 8070 port on host (app is served by dokcker on port 80 forwarded to 8080 on vm and forwarded again on 8070)
+>	- to login to VB run `vagrant ssh`
+>	- app folder is copied first to VirtualBox vm and next built into docker image
+>	- VirtualBox vm name is: Hellospa
+>	- docker image name built in deployment process is: hello-spa (taged as latest)
+>	- docker conatiner is named: hello-spa-container 
+
+
+
+
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

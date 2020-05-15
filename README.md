@@ -35,10 +35,10 @@ Prerequisite:
 > INFO: 
 >
 >	- IP of Virtualbox vm is assigned by DHCP
->	- app is accessible on 8070 port on host (app is served by dokcker on port 80 forwarded to 8080 on vm and forwarded again on 8070)
+>	- app is accessible on 8060 port on host (app is served by dokcker on port 80 forwarded to 8080 on vm and forwarded again on 8060)
 >	- to login to VB run `vagrant ssh`
 >	- app folder is copied first to VirtualBox vm and next built into docker image
->	- VirtualBox vm name is: Hellospa
+>	- VirtualBox vm name is: HellospaNP
 >	- docker image name built in deployment process is: hello-spa (taged as latest)
 >	- docker conatiner is named: hello-spa-container 
 

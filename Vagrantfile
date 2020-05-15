@@ -37,8 +37,8 @@ Vagrant.configure("2") do |config|
   
   #Shell provision for basic tools installation might be useful after app installation 
   config.vm.provision "shell", inline: <<-SHELL
-  #   sudo yum update
-  #   sudo yum install -y vim git net-tools
+     sudo yum update
+     sudo yum install -y vim git net-tools
      sudo /vagrant/install_docker.sh
      /vagrant/start_docker.sh
   SHELL
